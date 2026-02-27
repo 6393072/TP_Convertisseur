@@ -2,9 +2,11 @@ import unittest
 from src.convertisseur import celsius_vers_fahrenheit, fahrenheit_vers_celsius, celsius_vers_kelvin, kelvin_vers_celsius
 
 class TestConvertisseur(unittest.TestCase):
-    def test_c_vers_f(self):
-        self.assertEqual(celsius_vers_fahrenheit(0),32)
+    def test_c_vers_f(self):        
         self.assertEqual(celsius_vers_fahrenheit(100),212)
+
+    def test_c0_vers_f(self):
+        self.assertEqual(celsius_vers_fahrenheit(0),32)
 
     def test_f_vers_c(self):
         self.assertEqual(fahrenheit_vers_celsius(68),20)
